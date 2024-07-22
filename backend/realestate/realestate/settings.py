@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts',
     'realtors',
+    'listings',
+    'contacts'
 ]
 
 MIDDLEWARE = [
@@ -131,7 +133,7 @@ STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL='/media/'
 REST_FRAMEWORK={
-    'DEFAULT_PERMISSSION_CLASSES':[
+    'DEFAULT_PERMISSION_CLASSES':[
         'rest_framework.permissions.IsAuthenticated'
     ],
     'DEFAULT_AUTHENTICATION_CLASSES':[
